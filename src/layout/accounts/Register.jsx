@@ -6,6 +6,9 @@ import "aos/dist/aos.css";
 
 const Register = () => {
   AOS.init();
+  const handleRegister = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <h1 className="text-center mt-5 text-xl md:text-4xl font-bold">
@@ -14,6 +17,7 @@ const Register = () => {
       <div className="flex flex-col md:flex-row-reverse max-w-6xl mx-auto my-5">
         <div className="card shrink-0 h-full max-w-md shadow-2xl bg-base-100 flex-1 mt-5">
           <form
+            onSubmit={handleRegister}
             data-aos="fade-down"
             data-aos-duration="1600"
             className="card-body"
@@ -56,13 +60,15 @@ const Register = () => {
               <label className="label">
                 <Link to="/login" className="">
                   Already have an account?{" "}
-                  <span className="text-purple-700 font-bold link-hover ">Login</span>
+                  <span className="text-purple-700 font-bold link-hover ">
+                    Login
+                  </span>
                 </Link>
               </label>
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-outline text-purple-700 hover:text-white hover:bg-purple-700 hover:border-none">
-                Login
+                Register
               </button>
             </div>
           </form>

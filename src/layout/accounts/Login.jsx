@@ -6,12 +6,15 @@ import "aos/dist/aos.css";
 
 const Login = () => {
   AOS.init();
+  const handleLogin = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <h1 className="text-center mt-5 text-xl md:text-4xl font-bold">Login </h1>
       <div className="flex flex-col md:flex-row-reverse max-w-6xl mx-auto my-5">
         <div className="card shrink-0 h-full max-w-md shadow-2xl bg-base-100 flex-1 mt-14">
-          <form
+          <form onSubmit={handleLogin}
             data-aos="fade-down"
             data-aos-duration="1600"
             className="card-body"
