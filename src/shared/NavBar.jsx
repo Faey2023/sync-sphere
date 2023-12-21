@@ -6,4 +6,5 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;<h1>navbar</h1>
+export default NavBar;
+// https://i.ibb.co/c39zVYM/logo.png
