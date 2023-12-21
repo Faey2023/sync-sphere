@@ -13,7 +13,7 @@ const Banner = () => {
         <p className="text-lg md:text-2xl font-semibold">
           Simplify tasks, stay organized, achieve more.
         </p>
-        <Link to="/login" className="btn btn-outline text-purple-700">
+        <Link to="/login" className="btn btn-outline text-purple-700 hover:text-white hover:bg-purple-700 hover:border-none">
           Let&apos;s Explore
         </Link>
       </div>
@@ -23,3 +23,4 @@ const Banner = () => {
 };
 
 export default Banner;
+
