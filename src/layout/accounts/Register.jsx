@@ -4,18 +4,32 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Login = () => {
+const Register = () => {
   AOS.init();
   return (
     <>
-      <h1 className="text-center mt-5 text-xl md:text-4xl font-bold">Login </h1>
+      <h1 className="text-center mt-5 text-xl md:text-4xl font-bold">
+        Register
+      </h1>
       <div className="flex flex-col md:flex-row-reverse max-w-6xl mx-auto my-5">
-        <div className="card shrink-0 h-full max-w-md shadow-2xl bg-base-100 flex-1 mt-14">
+        <div className="card shrink-0 h-full max-w-md shadow-2xl bg-base-100 flex-1 mt-5">
           <form
             data-aos="fade-down"
             data-aos-duration="1600"
             className="card-body"
           >
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Name</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                className="input input-bordered"
+                required
+              />
+            </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -39,13 +53,10 @@ const Login = () => {
                 className="input input-bordered"
                 required
               />
-
               <label className="label">
                 <Link to="/login" className="">
-                  Don&apos;t have an account?{" "}
-                  <span className="text-purple-700 font-bold link-hover ">
-                    Register
-                  </span>
+                  Already have an account?{" "}
+                  <span className="text-purple-700 font-bold link-hover ">Login</span>
                 </Link>
               </label>
             </div>
@@ -66,4 +77,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
