@@ -33,11 +33,21 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-center items-center flex-row text-3xl gap-5">
-          <FaFacebookF className="hover:text-black" />
-          <FaXTwitter className="hover:text-black" />
-          <FaYoutube className="hover:text-black" />
-          <FaLinkedinIn className="hover:text-black" />
-          <FaDiscord className="hover:text-black" />
+          <Link to='/facebook'>
+            <FaFacebookF className="hover:text-black" />
+          </Link>
+          <Link>
+            <FaXTwitter className="hover:text-black" />
+          </Link>
+          <Link>
+            <FaYoutube className="hover:text-black" />
+          </Link>
+          <Link>
+            <FaLinkedinIn className="hover:text-black" />
+          </Link>
+          <Link>
+            <FaDiscord className="hover:text-black" />
+          </Link>
         </div>
       </div>
     </div>

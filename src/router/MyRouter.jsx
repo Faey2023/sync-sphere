@@ -6,7 +6,12 @@ const MyRouter = createBrowserRouter([
   {
     path: "/",
     element: <MainPage />,
-    children: [{ path: "/", element: <Home /> }],
+    children: [
+      { path: "/", element: <Home />},
+      { path: "/login", element: <Home />},
+      // { path: "/", element: <Home />},
+      // { path: "/", element: <Home />},
+  ],
   },
 ]);
 
