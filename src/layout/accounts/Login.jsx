@@ -10,8 +10,8 @@ import toast from "react-hot-toast";
 const Login = () => {
   AOS.init();
   const { loginUser } = useAuth();
-  // const currentLocation = useLocation();
-  // const destinedLocation = useNavigate();
+  const currentLocation = useLocation();
+  const destinedLocation = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -22,7 +22,7 @@ const Login = () => {
         toast.success("Login successfully!!!");
         console.log(response.user);
         // go to the route after login
-        // destinedLocation(currentLocation?.state ? currentLocation.state : "/");
+        destinedLocation(currentLocation?.state ? currentLocation.state : "/task");
       })
       .catch((error) => {
         toast.error(error.code);

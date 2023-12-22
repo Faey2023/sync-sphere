@@ -3,6 +3,7 @@ import MainPage from "../layout/MainPage";
 import Home from "../page/home/Home";
 import Login from "../layout/accounts/Login";
 import Register from "../layout/accounts/Register";
+import TaskDashboard from "../layout/task/TaskDashboard";
 
 const MyRouter = createBrowserRouter([
   {
@@ -11,7 +12,7 @@ const MyRouter = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
 
-      // { path: "/", element: <Home />},
+      { path: "/task", element: <TaskDashboard /> },
     ],
   },
   { path: "/login", element: <Login /> },

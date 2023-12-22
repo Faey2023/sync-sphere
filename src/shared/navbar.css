@@ -1,0 +1,24 @@
+.bm-menu {
+    background: linear-gradient(112.5deg, rgb(95, 10, 135) 11.4%, rgb(164, 80, 139) 60.2%);
+    padding: 2.5em;
+  }
+  
+  .bm-item {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
+  
+  .bm-burger-bars {
+    background: #fff;
+  }
+  
