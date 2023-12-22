@@ -4,11 +4,13 @@ import Home from "../page/home/Home";
 import Login from "../layout/accounts/Login";
 import Register from "../layout/accounts/Register";
 import TaskDashboard from "../layout/task/TaskDashboard";
+import ErrorPage from "../error/ErrorPage";
 
 const MyRouter = createBrowserRouter([
   {
     path: "/",
     element: <MainPage />,
+    errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <Home /> },
 
