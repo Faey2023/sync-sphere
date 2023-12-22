@@ -4,7 +4,7 @@ import { IoIosLogOut } from "react-icons/io";
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
-import Items from "./Items";
+import Items from "./Todo/Items";
 
 const TaskDashboard = () => {
   const { user, userSignOut } = useAuth();
@@ -21,7 +21,7 @@ const TaskDashboard = () => {
       {/*  */}
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col items-center justify-center">
+        <div className="drawer-content flex flex-col mt-5">
           {/* Page content here */}
           <Items />
           <label
@@ -58,7 +58,7 @@ const TaskDashboard = () => {
           </div>
           <hr />
           <div className="flex flex-col">
-            <Link id="home" className="hover:text-black ml-5" to="/">
+            <Link id="home" className="hover:text-black ml-10" to="/">
               <FaHome className="inline-block mr-3" />
               Home
             </Link>

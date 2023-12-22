@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col md:flex-row max-w-7xl mx-auto">
-      <div className="flex flex-col justify-center text-center items-center flex-1 space-y-3">
+    <div className="flex flex-col md:flex-row max-w-7xl mx-auto shadow-xl my-5">
+      <div className="flex flex-col justify-center text-center items-center flex-1 space-y-3 ">
         <h1 className="font-bold text-xl md:text-4xl ">
           Elevate Your Productivity with <br />
           <span className="text-purple-700">Sync Sphere</span>
@@ -17,7 +17,7 @@ const Banner = () => {
           Let&apos;s Explore
         </Link>
       </div>
-      <Lottie animationData={bannerAnimation} style={{ height: "85vh" }} />
+      <Lottie animationData={bannerAnimation} style={{ height: "80vh" }} />
     </div>
   );
 };
